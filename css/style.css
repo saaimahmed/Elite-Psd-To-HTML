@@ -1,0 +1,313 @@
+/********** Template CSS **********/
+:root {
+    --primary: #FF6F0F;
+    --secondary: #FFF0E6;
+    --light: #F8F8F9;
+    --dark: #282626;
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 30px;
+    bottom: 30px;
+    z-index: 99;
+}
+
+
+
+
+
+/*** Button ***/
+
+
+
+/*** Navbar ***/
+.fixed-top {
+    transition: .5s;
+}
+.margin-left-section  {
+    margin-left: 42px;
+}
+
+.border-quote{
+    border: 1px solid #ff0000;
+    margin-right: -5px;
+}
+.top-bg-color{
+    background-color: #08526d;
+}
+
+
+
+
+.navbar-nav a{
+    color: #08526d;
+}
+.navbar-nav a:hover{
+    color: #ed1d24;
+}
+
+
+@media (max-width: 991.98px) {
+    .navbar .navbar-nav {
+        margin-top: 10px;
+        border-top: 1px solid rgba(0, 0, 0, .07);
+        background: var(--dark);
+    }
+
+    .navbar .navbar-nav .nav-link {
+        padding: 10px 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+        display: block;
+        visibility: hidden;
+        top: 100%;
+        transform: rotateX(-75deg);
+        transform-origin: 0% 0%;
+        transition: .5s;
+        opacity: 0;
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+        transform: rotateX(0deg);
+        visibility: visible;
+        transition: .5s;
+        opacity: 1;
+    }
+}
+
+.navbar-nav .nav-link {
+    margin-right: 38px;
+}
+
+
+/*** Header ***/
+.carousel-caption {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /*background: rgba(133, 125, 122, 0.69);*/
+    z-index: 1;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 15%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--dark);
+    border: 12px solid var(--dark);
+
+}
+.carousel-control-prev-icon:hover{
+    background-color: #ed1d24;
+    color: white;
+    border: 12px solid #ed1d24;
+}
+
+.carousel-control-next-icon:hover{
+     background-color: #ed1d24;
+    color: white;
+    border: 12px solid #ed1d24;
+    transition: .3s;
+
+}
+.text-size-carousel {
+    font-size: 50px;
+}
+@media (max-width: 768px) {
+    #header-carousel .carousel-item {
+        position: relative;
+        min-height: 450px;
+    }
+    
+    #header-carousel .carousel-item img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.bg-red{
+    background-color: red;
+}
+
+.page-header {
+    padding-top: 12rem;
+    padding-bottom: 6rem;
+    background: linear-gradient(rgba(0, 29, 35, .8), rgba(141, 154, 157, 0.8)), url(../img/carousel-1.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.page-header .breadcrumb-item+.breadcrumb-item::before {
+    color: #a59595;
+}
+
+
+
+
+
+/*** Service ***/
+
+.btn-rounded {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+.text-color {
+    color: #f1595e;
+}
+.btn-red {
+    background-color: #ff0000;
+    color: white;
+}
+
+.btn-blue {
+    background-color: #28305f;
+    color: white;
+}
+
+/*latest post*/
+.text-color-latest-post {
+    color: #08526d;
+}
+/*latest post*/
+
+/*Feature Work*/
+.border-info-button{
+    border: 1.5px solid #08526d;
+    color: #08526d;
+    word-spacing: 5px;
+
+}
+.btn-outline-danger-button:hover{
+    background-color: red;
+    color: white;
+    border: red;
+}
+
+.tab-card-img-height {
+    transition: transform 2s, filter 1.5s ease-in-out;
+    transform-origin: center center;
+    filter: brightness(50%);
+}
+.tab-card-img-height:hover {
+    transform: scale(1.1); /* Apply zoom effect on hover */
+}
+.img-hover-zoom--brightness img {
+    filter: brightness(100%);
+    transform: scale(1.3);
+
+}
+
+/* The Transformation */
+.img-hover-zoom--brightness:hover img {
+
+}
+
+/*pricing table*/
+.text-color-pricing{
+    color: #08526d;
+}
+.pricing-table-row{
+    background-color: red;
+    color: white;
+}
+
+.pricing-table-row{
+    background-color: #eff1f2;
+
+}
+
+.pricing-table-row:hover{
+    background-color: red;
+
+}
+
+
+.margin-minus:hover{
+
+    margin-top: -12px;
+
+    transition: 0.5s;
+}
+.text-client-minus{
+    margin-top: -10px;
+}
+
+.btn-red:hover{
+    background-color: midnightblue;
+    color: white;
+}
+
+
+.bg-red{
+    background-color: #ed0000;
+}
+.btn-blue:hover{
+    background-color: #ff0000;
+    color: white;
+}
+
+
+.btn-outline-blue{
+    border: #0b2d57;
+    color: white;
+}
+.small-margin-left{
+    margin-left: 15px;
+}
+
+/*Contact us border*/
+.contact {
+    font-family: Bahnschrift;
+    font-size: 24px;
+    font-weight: lighter;
+    word-spacing: 5px;
+    color: #eff1f2;
+}
+.border-contact-us{
+
+    border: 1px solid white;
+    padding: 8px;
+    color: white;
+}
+.border-contact-us:hover{
+
+    border: 1px solid #0b2d57;
+    padding: 8px;
+    color: #0b2d57;
+}
+
+
+
+
+/*** Footer ***/
+.footer-bg {
+    background-color: #f7f7f7;
+
+}
+.margin-left-p{
+    margin-left: 22px;
+}
+.footer-text-color {
+    color: #185d76;
+}
+.footer-font-size{
+
+    font-size: 12px;
+}
